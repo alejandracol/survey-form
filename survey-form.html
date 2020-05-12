@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="survey-form.css">
+    <title>Canine Survey Form</title>
+</head>
+
+<body>
+    <img class='decoration-1 decoration-responsive' src='decoration-1.jpg' alt=''>
+    <img class='decoration-2 decoration-responsive' src='decoration-2.jpg' alt=''>
+    <div class='container'>
+        <header>
+            <h1 id='title'>Canine Survey Form</h1>
+            <p id='description'>Thank you for taking the time to fulfill our personality canine test.</p>
+        </header>
+        <form id='survey-form' action='#'>
+            <h2>User information</h2>
+            <section class='form-group'>
+                <label id='name-label' for='name'>Name</label>
+                <input type='text' name='name' id='name' class='form-control' placeholder='Enter your name' required>
+            </section>
+            <section class='form-group'>
+                <label id='email-label' for='email'>Email</label>
+                <input type='email' name='email' id='email' class='form-control' placeholder='Enter your email'
+                    required>
+            </section>
+            <h2>Canine information</h2>
+            <section class='form-group'>
+                <p>What gender does your pet identify with?</p>
+                <input type='radio' name='gender' id='female' class='input-radio' value='female'>
+                <label for='female'>Female</label>
+                <input type='radio' name='gender' id='male' class='input-radio' value='male'>
+                <label for='male'>Male</label>
+                <input type='radio' name='gender' id='not-sure' class='input-radio' value='not-sure'>
+                <label for='not-sure'>Not-sure</label>
+            </section>
+            <section class='form-group'>
+                <label id='number-label' for='number'>Based on the scale below, how friendly is your dog?</label>
+                <input type='number' name='friendly-clasification' id='number' min=1 max=5 class='form-control'
+                    placeholder='Enter a number' required>
+                <figure>
+                    <img class='img-scale' src='emoticon-scale.jpg'
+                        alt='emoticon scale, where 1 is not friendly at all and 5 is very friendly'>
+                    <table>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                    <figcaption>*Where 1 is not friendly at all and 5 is very friendly.</figcaption>
+                </figure>
+            </section>
+            <section class='form-group'>
+                <p>What is your dog's favorite activity?</p>
+                <select name='favorite-activity' id='dropdown' class='form-control' required>
+                    <option disabled selected value>--Please choose an option--</option>
+                    <option value='nap'>Take a nap</option>
+                    <option value='eat'>To eat well</option>
+                    <option value='attentions'>Receiving your attentions</option>
+                    <option value='exercise'>To do exercise</option>
+                    <option value='walk'>Take a walk</option>
+                    <option value='socialize'>Socialize</option>
+                    <option value='play'>Play</option>
+                    <option value='bite'>To bite bite and bite</option>
+                    <option value='digging'>Digging</option>
+                    <option value='exploring'>Exploring</option>
+                    <option value='swimming'>Swimming</option>
+                    <option value='lazy'>To be lazy</option>
+                    <option value='other'>Other</option>
+                </select>
+            </section>
+            <section class='form-group'>
+                <p>How does your dog sleep? <span>(Check all that apply)</span></p>
+                <div class='container-checkbox'>
+                    <label for='sideway' class='container-input-checkbox'>
+                        <img class='img-checkbox' src='sleeping-ways-1.jpg'
+                            alt='illustrative image sleeping way: sideway'>
+                        <div><input type='checkbox' name='sleeping-ways' id='sideway' class='input-checkbox'
+                                value='sideway'>Sideway</div>
+                    </label>
+                    <label for='curlep-up' class='container-input-checkbox'>
+                        <img class='img-checkbox' src='sleeping-ways-2.jpg'
+                            alt='illustrative image sleeping way: Curled-up'>
+                        <div><input type='checkbox' name='sleeping-ways' id='curlep-up' class='input-checkbox'
+                                value='curlep-up'>Curled-up</div>
+                    </label>
+                    <label for='head-over-heels' class='container-input-checkbox'>
+                        <img class='img-checkbox' src='sleeping-ways-3.jpg'
+                            alt='illustrative image sleeping way: head over heels'>
+                        <div><input type='checkbox' name='sleeping-ways' id='head-over-heels' class='input-checkbox'
+                                value='head-over-heels'>Head over heels</div>
+                    </label>
+                    <label for='crazy-legs' class='container-input-checkbox'>
+                        <img class='img-checkbox' src='sleeping-ways-4.jpg'
+                            alt='illustrative image sleeping way: crazy legs'>
+                        <div><input type='checkbox' name='sleeping-ways' id='crazy-legs' class='input-checkbox'
+                                value='crazy-legs'>Crazy legs</div>
+                    </label>
+                    <label for='superman' class='container-input-checkbox'>
+                        <img class='img-checkbox' src='sleeping-ways-5.jpg'
+                            alt='illustrative image sleeping way: superman'>
+                        <div><input type='checkbox' name='sleeping-ways' id='superman' class='input-checkbox'
+                                value='superman'>Superman</div>
+                    </label>
+                    <label for='of-belly' class='container-input-checkbox'>
+                        <img class='img-checkbox' src='sleeping-ways-6.jpg'
+                            alt='illustrative image sleeping way: of belly'>
+                        <div><input type='checkbox' name='sleeping-ways' id='of-belly' class='input-checkbox'
+                                value='of-belly'>Of belly</div>
+                    </label>
+                    <!--Images by Jacinda Mareno (2019). © Fabiosa 2017 - 2020. All rights reserved.
+                        recovered from: https://fabiosa.es/dvgfes-ctanic-rsjhg-ausel-pblgn-significado-posiciones-perros-dormir/-->
+                </div>
+            </section>
+            <section class='form-group'>
+                <p>Leave us your comments</p>
+                <textarea name='comment' id='comments' class='input-textarea'
+                    placeholder="Enter your comment here"></textarea>
+            </section>
+            <section class='form-group'>
+                <button type=' submit' id='submit' class='submit-button'>Submit</button>
+            </section>
+        </form>
+    </div>
+</body>
+
+</html>
